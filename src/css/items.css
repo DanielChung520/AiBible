@@ -1,0 +1,154 @@
+.items-body {
+    background-color: #e2edf8; 
+    height: 100vh; 
+    padding-top:20;
+    padding-right:10;
+}
+
+.title-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    background-color: #007bff; 
+    height: 50px; 
+    color: white; 
+    text-align: center; 
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    font-size: 20px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 字体阴影 */
+    box-shadow: 0px 4px 10px rgba(66, 63, 63, 0.921); /* div 的阴影效果 */
+}
+
+.content-bar {  
+    display: flex; /* 使用 Flexbox 布局 */
+    background-color: #007bff; 
+    height: 50px; 
+    color: white; 
+    text-align: center; 
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    font-size: 14px; /* 字体大小 */
+    font-weight: bold; /* 字体粗细 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 字体阴影 */
+    box-shadow: 0px 4px 10px rgba(66, 63, 63, 0.921); /* div 的阴影效果 */
+}
+
+
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; /* 保持文字居中 */
+    z-index: 1000; /* 确保在其他内容之上 */
+}
+
+#markdown-output {  /* Markdown 输出框 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+    border-radius: 5px; /* 圆角效果 */
+    padding: 15px; /* 内边距 */
+    margin-top: 40px; /* 上边距 */
+    font-family: Arial, sans-serif; /* 字体 */
+    line-height: 1.6; /* 行高 */
+    color: #343a40; /* 字体颜色 */
+    overflow-y: auto; /* 如果内容过多，允许垂直滚动 */
+    /* max-height: 400px; 最大高度，可以根据需要调整 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 可选的额外样式 */
+#markdown-output h1, 
+#markdown-output h2, 
+#markdown-output h3 {
+    color: #007bff; /* 标题颜色 */
+}
+
+#markdown-output a {    /* 链接Markdown样式 */
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+#markdown-output a:hover { 
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
+
+.custom-fixed-bottom {  /* 自定义的固定底部样式 */
+    height: 6%;
+    background-color: rgb(221, 234, 240);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* 添加向上方向的阴影 */
+}
+
+.modal {
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    position: fixed; /* 固定位置 */
+    z-index: 1000; /* 确保模态框在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; /* 可确保覆盖整个视口 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+}
+
+.modal-content {    /* 弹出框内容 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #7bbaed;
+    margin-left: 10%; /*  不需要外边距，使用 flexbox 来居中 */
+    margin-top:80%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* 宽度为 60% */
+    max-width: 400px; /* 设置最大宽度为 400px */
+    /* display: flex; 使用 Flexbox */
+    /*flex-direction: column;  垂直排列内容 */
+    align-items: center; /* 使内容水平居中 */
+}
+
+
+.fixed-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* 鼠标悬停时改变透明度 */
+}
+
+.fixed-button i {
+    font-size: 30px; /* 图标大小 */
+    color: #000; /* 图标颜色 */
+}
+
+/* 滑動刪除 */
+.list-group-item {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-item-content {
+    transition: transform 0.3s ease;
+}
+
+.list-item-action {
+    position: absolute;
+    right: -100px; /* 初始位置在外部 */
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.list-group-item-action::after {
+    font-size: 80%;
+    content: attr(data-status-text); /* 使用 data-status-text 属性 */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-weight: 100;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,19 @@
+/* theme.css */
+:root {
+    --light-background: #040404;
+    --light-color: #fffffffe;
+    --dark-background: #000000;
+    --dark-color: #000000;
+  }
+  
+  body {
+    background-color: var(--light-background);
+    color: var(--light-color);
+  }
+  
+  body.dark-theme {
+    background-color: #000000; /* 假设深色背景为黑色 */
+    color: #fff; /* 切换为白色文字 */
+    mix-blend-mode: difference; /* 使用mix-blend-mode混合模式，将文字反转颜色 */
+  }
+  

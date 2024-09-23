@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>項目</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="/src/css/items.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/src/assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="items-body">
+        <div class="content-bar fixed-top">
+            Hello
+        </div>
+        <div class="container mt-3">
+            <div class="list-group">
+                <!-- <a href="#" class="list-group-item list-group-item-action">第一项</a> -->
+            </div>
+        </div>
+
+        <div id="markdown-output">
+
+        </div>
+
+    </div>
+
+    
+    <div class="container fixed-bottom custom-fixed-bottom" >
+        <div class="container mt-3 d-flex justify-content-center align-items-center" >
+            <button id = "back-button" type="button" class="btn btn-primary btn-sm mx-5" >回前頁</button>
+            
+            <button id = "reask-button" type="button" class="btn btn-primary btn-sm mx-5">再詢問</button>
+
+        </div>
+    </div>
+    <!-- 将 marked.js 的引入放在 itemContent.js 之前 -->  
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!-- <script src="ackAi.js"></script>  -->
+    <script type="module"  src="/js/itemContent.js"></script>
+    <script src="/src/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

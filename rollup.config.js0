@@ -1,0 +1,21 @@
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import polyfillNode from 'rollup-plugin-polyfill-node';
+
+export default {
+  input: 'js/items.js',
+  output: {
+    file: 'js/bundle.js',
+    format: 'iife', // 立即执行函数表达式
+    globals: {
+      express: 'express',
+      uuid: 'uuid'
+    }
+  },
+  plugins: [
+    resolve(), // 解析 Node.js 模块
+    commonjs(), // 处理 CommonJS 模块
+    polyfillNode() // 模拟 Node.js 核心模块
+  ],
+  external: ['express', 'uuid']
+};

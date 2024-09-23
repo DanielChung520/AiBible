@@ -1,0 +1,29 @@
+{
+  "name": "aibible",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "file-saver": "^2.0.5",
+    "fs-extra": "^11.2.0",
+    "marked": "^14.1.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.22.2",
+    "rollup-plugin-polyfill-node": "^0.13.0"
+  }
+}

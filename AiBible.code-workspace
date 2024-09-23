@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "AiBible",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "../AiBiblePWA/src"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AiBible"
+	}
+}

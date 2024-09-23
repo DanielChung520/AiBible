@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 测试</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/items.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 引入 marked.js
+    <style>
+        #markdown-output {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Markdown 测试</h1>
+        <textarea id="markdown-input" rows="10" cols="30" placeholder="请输入 Markdown 内容..."></textarea>
+        <button id="render-button">渲染 Markdown</button>
+
+        <div id="markdown-output"></div> <!-- 输出区域 -->
+    </div>
+
+    <script src="test.js"></script> <!-- 引入 JS 脚本 -->
+</body>
+
+</html>

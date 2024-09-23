@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="title" content="Ai解經" data-id="myTitle">
+    <title>Ai解經</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="/src/css/items.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/src/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="items-body">
+<div class="title-bar fixed-top">
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="pill" href="#aiExp">Ai解經</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#lecture">講 章</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="pill" href="#encuragement">勉 勵</a>
+        </li>
+    </ul>
+    <div class="icon-container" style="float: right; margin-left: auto; padding: 10px;">
+        <a href="#" title="聖經" id="bibleIcon" style="margin-right: 30px;">
+            <i class="fa-duotone fa-solid fa-book-bible" style = "color: #e1f6f9; font-size: 24px;"></i> <!-- 设置图标 -->
+
+        <a href="#" title="刷新" id="refreshIcon" style="margin-right: 10px;">
+            <i class="fa-solid fa-rotate " style = "color: #e1f6f9; font-size: 24px;"></i> <!-- 设置图标 -->
+        </a>
+    </div>
+</div>
+
+        <div class="container mt-3 ">
+            <div class="list-group" style="margin-top: 15%;">
+                <!-- <a href="#" class="list-group-item list-group-item-action">第一项</a> -->
+            </div>
+
+        </div>
+        <div id="queryingModal" class="modal" style="display:none;">
+            <div class="modal-content mt-4">
+                <p><b>目前正在詢問中，请您稍等！</p>
+                <div style="display: flex; justify-content: center; gap: 40px; margin-top:30px;">
+                    <button id="confirmBtnQuery">确確</button>
+                    <button id="reAskBtn">重問</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container fixed-bottom">
+            <div class="input-group mb-1" style="width: 100%; margin-top: 10px;">
+                <input type="text" class="form-control" placeholder="請輸入您的題目...">
+                <button class="btn btn-primary" type="submit">新增</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="/app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script type="module" src="/js/items.js"></script>
+    <script src="/src/assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
